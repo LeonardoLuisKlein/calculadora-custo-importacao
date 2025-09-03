@@ -404,7 +404,8 @@
 
       function calcular() {
         const titulo = $("#titulo").val().trim() || "Produto";
-        const valorYuan = parseFloat($("#valorYuan").val()) || 0;
+        const baseYuan = parseFloat($("#valorYuan").val()) || 0;
+        const valorYuan = baseYuan + 10 + 3 + baseYuan * 0.06;
         const peso = parseFloat($("#peso").val()) || 0;
         const cotacaoYuan = parseFloat($("#cotacaoYuan").val()) || 1;
         const declaradoUSD = parseFloat($("#declaradoUSD").val()) || 0;
